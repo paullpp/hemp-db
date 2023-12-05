@@ -1,9 +1,10 @@
 /mysql/*
-/helloworld/__pycache__/*
-/hempdb/__pycache__/*
+*/__pycache__/*
 .DS_Store
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 .env
+helloworld/migrations/__pycache__/__init__.cpython-312.pyc
+userlogin/migrations/__pycache__/__init__.cpython-312.pyc

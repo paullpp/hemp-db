@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link link-light px-4" href="/">HOME</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Databases
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/companies">Companies</a>
+          <a class="dropdown-item" href="#">Database #2</a>
+          <a class="dropdown-item" href="#">Database #3</a>
+        </div>
+      </li>
+    </ul>
+    <a class="nav-link link-light" href="user/login">LOGIN</a>
+  </div>
+</nav>
+
+
+  {% block content %}
+  {% endblock %}
+</body>
+</html>
